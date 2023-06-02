@@ -18,11 +18,11 @@ class listaAcciones(MRJob):
         incremento = True
 
         for fecha, precio in sorted_values:
-            if precioAnt is not None and precio < previous_price:
+            if precioAnt is not None and precio < precioAnt:
                 incremento = False
                 break
 
-            previous_price = precio
+            precioAnt = precio
 
         if incremento:
             yield comp, 'Sube/Mantiene estable'
