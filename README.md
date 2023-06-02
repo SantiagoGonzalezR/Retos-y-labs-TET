@@ -131,7 +131,13 @@ hdfs dfs -cat /user/admin/result3/part-00000 #Puede ser 00000, 00001 o 00002#
 ![image](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/77d98df5-81e1-4d22-b217-013cb967f511)
 Con esto se da por concluido el laboratorio N7 y seguimos a los retos de programacion
 # Retos de programacion en Map/Reduce
-Todos los codigos ejecutados estaran adjuntos en el github bajo diferentes carpetas
+Todos los codigos ejecutados estaran adjuntos en el github bajo diferentes carpetas, la siguiente es la logica que segui a la hora de ejecutar los codigos:
+```sh
+python nombre.py hdfs:///user/admin/datasets/otros/nombredataset.txt -r hadoop --output-dir hdfs:///user/admin/<carpeta_para_guardar(SIEMPRE DIFERENTE)>
+hdfs dfs -cat /user/admin/<carpeta_para_guardar(SIEMPRE DIFERENTE)>/part-0000
+hdfs dfs -cat /user/admin/<carpeta_para_guardar(SIEMPRE DIFERENTE)>/part-0001
+hdfs dfs -cat /user/admin/<carpeta_para_guardar(SIEMPRE DIFERENTE)>/part-0002
+```
 ## Punto 1, Empleados
 A. Salario Promedio por Sector Economico  
 El output consiste en: El sector economico, el promedio del salario
