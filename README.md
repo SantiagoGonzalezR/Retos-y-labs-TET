@@ -132,4 +132,47 @@ hdfs dfs -cat /user/admin/result3/part-00000 #Puede ser 00000, 00001 o 00002#
 Con esto se da por concluido el laboratorio N7 y seguimos a los retos de programacion
 # Retos de programacion en Map/Reduce
 Todos los codigos ejecutados estaran adjuntos en el github bajo diferentes carpetas
-## Punto 1, DIAN
+## Punto 1, Empleados
+A. Salario Promedio por Sector Economico  
+El output consiste en: El sector economico, el promedio del salario
+![1a](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/a5868bb7-29cf-44ba-9828-f5994eadd003)
+
+B. Salario Promedio por Empleado  
+El output consiste en: ID del empleado, el promedio del salario
+![1b](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/7bf05046-fab1-43c4-8a33-74a33a561d33)
+
+C. Cantidad de Sectores Economicos por Empleado  
+El output consiste en: ID del empleado, la cantidad de sectores economicos  
+![1c](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/068e93e0-9487-42e0-9f49-36efe29db98c)
+## Punto 2, Empresas
+A. Dias de menor y mayor valor  
+El output consiste en: El nombre de la empresa, el dia de menor valor para sus acciones y el dia de mayor valor para sus acciones
+![2a](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/3fa251e8-fc0a-469a-b8ca-2106de1638ec)
+B. Acciones que suben o mantienen estables  
+El output consiste en: El nombre de la empresa, la indicacion de como se comportan sus acciones
+![2b](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/a887bd41-e885-439d-80d9-faa88ed21019)
+C. Dia Negro  
+El output consiste en: La fecha del "Dia negro", el precio mas bajo de la accion (En el map reduce lo puse como un contador, no me funcionaba conseguir el valor de la accion)
+![2c](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/a0907296-8743-4c79-b079-58e7a5ceb759)
+## Punto 3, Peliculas
+A. Numero de peliculas por usuario, promedio del rating  
+El output consiste en: la ID del usuario, la puntuacion promedio, el conteo de ratings que han hecho
+![3a](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/3f2ddb37-16d7-4a9b-a254-866d1d1cc9b6)
+B. Dia en el que mas peliculas se han visto  
+El output consiste en: El dia en el que mas peliculas se han visto, la cantidad de peliculas vistas
+![3b](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/07106c45-0430-49e3-a5b8-b53da784df7d)
+C. Dia en el que menos peliculas se han visto  
+El output consiste en: El dia en el que menos peliculas se han visto, la cantidad de peliculas vistas
+![3c](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/e302e93c-f74a-4c30-af75-760c611dd58b)
+D. Usuarios que ven una sola pelicula con su rating promedio  
+El output consiste en: La ID de la pelicula, el rating promedio y la cantidad de usuarios que la vieron
+![3d](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/94c8ec9d-186e-4c37-84dc-8cf530360bee)
+E. Dia de peor promedio de ratings  
+El output consiste en: El dia con los peores ratings, el promedio de los ratings
+![3e](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/ffb80c0d-2327-4432-8047-0e99063fa284)
+F. Dia con el mejor promedio de ratings  
+El output consiste en: El dia con los mejores ratings, el promedio de los ratings
+![3f](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/c90c30f7-91e6-4381-abed-cfc593df69f6)
+G. La mejor y peor pelicula por genero  
+El output consiste en: El genero de pelicula, la ID de la pelicula con los peores ratings y la ID de la pelicula con los mejores ratings
+![3g](https://github.com/SantiagoGonzalezR/Retos-y-labs-TET/assets/68928481/5ffed753-2d28-4308-aa04-cd2cf9e7e7ef)
